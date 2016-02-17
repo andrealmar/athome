@@ -1,2 +1,13 @@
 .DS_Store
 .idea/*
+*.pyc
+*.pyo
+__pycache__/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django stuff:
+*.log
+*.pot
