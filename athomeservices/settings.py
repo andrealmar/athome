@@ -122,5 +122,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# WhiteNoise cachable files and gzip support
+# Simplified static file serving with WhiteNoise adding cachable files and gzip support
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
