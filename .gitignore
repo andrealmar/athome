@@ -4,6 +4,7 @@
 *.pyo
 __pycache__/
 .venv/*
+.env
 
 # Installer logs
 pip-log.txt
@@ -13,3 +14,4 @@ pip-delete-this-directory.txt
 *.log
 *.pot
 staticfiles
+*.sqlite3
