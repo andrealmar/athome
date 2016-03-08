@@ -1,15 +1,278 @@
-{% load static from staticfiles %}
-
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>AtHome Services</title>
+<!-- Custom CSS -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<script>
+	$(document).ready(function(e) {
+        $('.header-toogle h1').click(function(e) {
+            $('.nav ul').slideToggle(1000);
+        });$('#seacrh').click(function(e) {
+            $('.submit').slideToggle(100);
+        });
+    });
+</script>
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+<!-- Include js plugin -->
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script>
+	$(document).ready(function() {
+ 
+  $("#banner0").owlCarousel({
+    navigation : true,
+	items :1,
+	autoPlay	:true,
+	slideSpeed	:1000,
+	itemsDesktop :1,
+	itemsDesktopSmall :1,
+	itemsTablet :1,
+	itemsTabletSmall :1,
+	itemsMobile :1
+  });
+  $("#monthly").owlCarousel({
+    navigation : true,
+	items :1,
+	autoPlay	:true,
+	slideSpeed	:1000,
+	itemsDesktop :1,
+	itemsDesktopSmall :1,
+	itemsTablet :1,
+	itemsTabletSmall :1,
+	itemsMobile :1
+  });
+  $("#banner1").owlCarousel({
+    navigation : true,
+	items :1,
+	autoPlay	:true,
+	slideSpeed	:1000,
+	itemsDesktop :1,
+	itemsDesktopSmall :1,
+	itemsTablet :1,
+	itemsTabletSmall :1,
+	itemsMobile :1
+  });
+ 
+});
+</script>
 </head>
+
 <body>
-<h1>@Home Services</h1>
-<img src="{% static "images/hi.png" %}" alt="Hi!" />
+<div class="wraper">
+	<div class="header">
+    	<div class="ner">
+        	<div class="inerwraper2">
+            	<div class="logo-header"><img src="images/At_Home_Logo.png"></div>
+                <div class="sechdule1"><div class="sechdule"><h1>SCHEDULE A REPAIR</h1></div></div>
+                <div class="header-slider">
+                	<div id="banner0" class="owl-carousel owl-theme ">
+                        <img src="images/slider_03.png">
+                        <img src="images/slider_03.png">
+                        <img src="images/slider_03.png">
+                    </div>
+                </div>
+                <div class="top-social">
+                	<div class="top-social-img"><a href="#"><img src="images/facebo_03.png"></a></div>
+                	<div class="top-social-img"><a href="#"><img src="images/google_03.png"></a></div>
+                	<div class="top-social-img"><a href="#"><img src="images/in_05.png"></a></div>
+                	<div class="top-social-img"><a href="#"><img src="images/twiter_05.png"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="nav">
+    	<div class="inerwraper">
+        	<div class="call"><h1>801-808-5845</h1></div>
+            <div class="header-toogle"><h1>≡</h1></div>
+        	<ul>
+
+            	<li><a href="#">HOME</a></li>
+            	<li><a href="#">SERVICES</a></li>
+            	<li><a href="#">VALUE CARE</a></li>
+            	<li><a href="#">GALLERY</a></li>
+            	<li><a href="#">TESTIMONIALS</a></li>
+            </ul>
+            <div class="search-area">
+            <p id="seacrh">SCHEDULE A REPAIR TODAY!</p>
+            <div class="submit">
+            	<form action="">
+                	<input type="text" placeholder="Enter your zipcode:" />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+    	<div class="inerwraper">
+        	<div class="section2-left">
+            	<div class="section2-left-img"><img src="images/At_Home_Logo.png"></div>
+                
+            </div>
+            <div class="section2-middle">
+                	<div class="section2-middle-left">
+                    	<h1>
+                        	Look for the<br>AT HOME SERVICES<br>vehicles in your<br>neighborhood!<br><br>
+                        	<span class="span-sec2">
+                            	The At Home Difference
+                            </span>
+                        </h1>
+                        <p>
+                        	<strong>We’re not like the others.</strong><br>
+                            At Home Services is unique in the home repair industry.
+                            We help local technicians build their businesses, allowing
+                            them to focus on the most important thing: satisfaction
+                            and happiness in your own home.<br><br>
+                            <strong>Personalized service.</strong><br>
+                            Our goal is to provide a hero for your home, and that’s not
+                            just a gimmick. When you have a repair situation arise, we
+                            want it to be the same technician who comes to your home
+                            as the time before. They’ll know your name and how best
+                            to help you with access to a database, calendar, parts lists,
+                            and much more. What’s more, you’ll know them.<br><br>
+                            <strong>Truly a Home Hero you can trust.</strong><br>
+                            Your neighborhood’s Hero is their own business owner.
+                            Your satisfaction is their responisbility and ultimate goal.
+                            If you have questions or concerns, your Hero wants to
+                            know about them. Estimates, payments, and timelines on
+                            projects will all be worked out between your Hero and you.
+                        </p>
+                    </div>
+                    <div class="section2-middle-right">
+                    	<div class="section2-middle-img"><img src="images/Nissan_NV200_Winged_Wrap.png"></div>
+                        <h1>Our Neighborhood Heroes</h1>
+                        <div class="section-banner">
+                        	<div id="banner1" class="owl-carousel owl-theme ">
+                        	<div>
+                            <h1>MIKE SATTERLEE (<span class="bspan">West Jordan</span>)</h1>
+                        	<div class="section-banner-img"><img src="images/Mike's-Headshot.png"></div>
+                            <h1>Skills</h1>
+                            <p>
+                            • AIR CONDITIONING<br>
+                            • FURNACE & BOILER<br>
+                            • ELECTRICAL SYSTEMS<br>
+                            • OUTLETS & SWITCHES<br>
+                            • GARAGE DOORS<br>
+                            • PLUMBING SYSTEMS<br>
+                            </p>
+                            </div>
+                            <div>
+                            <h1>MIKE SATTERLEE (<span class="bspan">West Jordan</span>)</h1>
+                        	<div class="section-banner-img"><img src="images/Mike's-Headshot.png"></div>
+                            <h1>Skills</h1>
+                            <p>
+                            • AIR CONDITIONING<br>
+                            • FURNACE & BOILER<br>
+                            • ELECTRICAL SYSTEMS<br>
+                            • OUTLETS & SWITCHES<br>
+                            • GARAGE DOORS<br>
+                            • PLUMBING SYSTEMS<br>
+                            </p>
+                            </div>
+                            <div>
+                            <h1>MIKE SATTERLEE (<span class="bspan">West Jordan</span>)</h1>
+                        	<div class="section-banner-img"><img src="images/Mike's-Headshot.png"></div>
+                            <h1>Skills</h1>
+                            <p>
+                            • AIR CONDITIONING<br>
+                            • FURNACE & BOILER<br>
+                            • ELECTRICAL SYSTEMS<br>
+                            • OUTLETS & SWITCHES<br>
+                            • GARAGE DOORS<br>
+                            • PLUMBING SYSTEMS<br>
+                            </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="section1">
+    	<div class="inerwraper">
+        <div class="monthly">
+        <h1>Our Monthly Specials</h1>
+         <div class="monthly-iner">
+         	<div id="monthly"  class="owl-carousel owl-theme ">
+         	<div><img src="images/Garage_Door_Interior.png" /></div>
+         	<div><img src="images/Garage_Door_Interior.png" /></div>
+         	<div><img src="images/Garage_Door_Interior.png" /></div>
+         	<div><img src="images/Garage_Door_Interior.png" /></div>
+            </div>
+            <div class="monthly-bottom-text"><h1>All Garage Door Repairs 10% Off*</h1></div>
+         </div> 
+		</div>
+        	<div class="printable">
+            	<div class="print-left">
+            	<h1>Printable Brochures</h1>
+                <img src="images/1_03.png">
+                </div>
+                <div class="print-right">
+            	<h1>What Our Heroes Do</h1>
+                <p>
+                Some of our Heroes have specialties another
+Hero might not. We want to make sure we have
+all the bases covered, so if the Hero in your
+area can’t do the project you need, we can find
+another Hero with the proper skill set to help
+you, no problem. Below you’ll find a list of the
+work our Heroes can perform. We’re confident
+we can take care of any project you may have. If
+you have questions about a project, be sure to
+call your Neighborhood Hero and ask.
+                </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="testmoniles">
+    	<div class="inerwraper">
+        	<div class="testmoniles-iner">
+            	<h1>More Testimonials</h1>
+            	<div class="testmoniles-left">
+                	<p>“Harumquos sequia conecaecto molupta
+                    cullautes dolorum iumqui ipideru mquam,
+                    odipicil ende liquo idendant.<br><br>
+                    Tasin etur minto blacepe rchilluptur adiciist
+                    pro voloratecae reiciis as aut autatium quo
+                    blam quo qui toribusdae aut aces ma none
+                    voluptas aut optio. Nem ipsae. Nequid min
+                    reicipiet velendis alit atiisqui corem volenduci</p>
+                </div>
+                <div class="testmoniles-right">
+                	<p>
+                                        aut endestia.<br><br>
+                    Nos earit ut mostium quatquis maximoluptur
+                    restione core vollacescium haria dolesecto
+                    con con essusae pero beaquia ndanihi cietus
+                    niendis voluptatur? Qui omnim laborrum.”<br><br>
+                    -Mary J. from Murray</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+    	<div class="inerwraper">
+        	<ul>
+            	<li><a href="#"><img src="images/facebo_03.png" /></a></li>
+            	<li><a href="#"><img src="images/google_03.png" /></a></li>
+            	<li><a href="#"><img src="images/in_05.png" /></a></li>
+            	<li><a href="#"><img src="images/twiter_05.png" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
-
-
